@@ -1,5 +1,5 @@
 from llm_adapter.glm_53_flash_llm import Glm53FlashLlm
-from prompt.react_prompt_template import REACT_PROMPT_TEMPLATE
+from prompt.react.react_prompt_template import REACT_PROMPT_TEMPLATE
 from tool.tool_register import ToolRegister
 from parser.react_parser import ReactParser
 

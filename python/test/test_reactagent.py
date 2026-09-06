@@ -1,7 +1,7 @@
 from llm_adapter.glm_53_flash_llm import Glm53FlashLlm
 from tool.tool_register import ToolRegister
 from parser.react_parser import ReactParser
-from react.react_agent import ReActAgent
+from agent_core.react.react_agent import ReActAgent
 from tool.search_weather_tool import search
 
 llm = Glm53FlashLlm()
