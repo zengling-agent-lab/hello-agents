@@ -12,7 +12,7 @@ try:
 except Exception as e:
     print("Tavily API 错误:", e)
 
-# 测试 llm API - AIHubmix
+# 测试 llm_adapter API - AIHubmix
 from openai import OpenAI
 client = OpenAI(
     api_key="sk-jQqbeQIPSHcaMYib039d0829970d494eBaB6Fb6c38571eC6",
@@ -24,11 +24,11 @@ try:
         messages=[{"role": "user", "content": "Hello"}],
         max_tokens=10
     )
-    print("llm API 连接成功:", response.choices[0].message.content)
+    print("llm_adapter API 连接成功:", response.choices[0].message.content)
 except Exception as e:
-    print("llm API 错误:", e)
+    print("llm_adapter API 错误:", e)
 
-# # 测试 llm API - ModelScope（如果您使用的是 ModelScope，请取消注释并替换配置）
+# # 测试 llm_adapter API - ModelScope（如果您使用的是 ModelScope，请取消注释并替换配置）
 # from openai import OpenAI
 # client = OpenAI(
 #     api_key="your_modelscope_api_key",
@@ -40,6 +40,6 @@ except Exception as e:
 #         messages=[{"role": "user", "content": "Hello"}],
 #         max_tokens=10
 #     )
-#     print("llm API 连接成功:", response.choices[0].message.content)
+#     print("llm_adapter API 连接成功:", response.choices[0].message.content)
 # except Exception as e:
-#     print("llm API 错误:", e)
+#     print("llm_adapter API 错误:", e)

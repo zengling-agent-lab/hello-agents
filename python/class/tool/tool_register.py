@@ -1,6 +1,6 @@
 from typing import Dict, Any
 
-class ToolExecutor:
+class ToolRegister:
     """
     一个工具执行器，负责管理和执行工具。
     """
